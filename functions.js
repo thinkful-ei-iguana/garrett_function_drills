@@ -1,5 +1,6 @@
 'use strict';
 
+// drill - set 1
 function getYearOfBirth(age) {
   return 2019 - age;
 }
@@ -31,4 +32,10 @@ try {
   console.log(greeting);
 } catch (e) {
   console.log(e.message);
+}
+
+// drills - set 2
+
+function jediName(firstName, lastName) {
+  return lastName.slice(0, 3) + firstName.slice(0, 2);
 }
