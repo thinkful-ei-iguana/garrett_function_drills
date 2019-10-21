@@ -132,3 +132,31 @@ function getDaysInMonth(month, leapYear) {
 }
 
 getDaysInMonth('february', true);
+
+const randomNo = Math.floor(Math.random() * 3) + 1;
+
+function rockPaperScissors(num) {
+  if (num === randomNo) {
+    return 'The game ends in a tie';
+  }
+  else if (num === 1 && randomNo === 2) {
+    return 'Paper beats rock';
+  }
+  else if (num === 2 && randomNo === 1) {
+    return 'Paper beats rock';
+  }
+  else if (num === 1 && randomNo === 3) {
+    return 'Rock beats scissors';
+  }
+  else if (num === 3 && randomNo === 1) {
+    return 'Rock beats scissors';
+  }
+  else if (num === 2 && randomNo === 3) {
+    return 'Scissors beats paper';
+  }
+  else if (num === 3 && randomNo === 2) {
+    return 'Scissors beats paper';
+  }
+}
+
+rockPaperScissors();
