@@ -9,6 +9,18 @@ function createGreeting(name, age) {
     throw new Error('Age can not be negative');
   }
 
+  if (name === undefined || age === undefined) {
+    throw new Error('Arguments not valid');
+  }
+
+  if (typeof name !== 'string') {
+    throw new Error('Name must be a string');
+  }
+
+  if (typeof age !== 'number') {
+    throw new Error('Age must be a number');
+  }
+
   const yearOfBirth = getYearOfBirth(age);
   
   return `Hi my name is ${name} and I am ${age} years old and I was born in ${yearOfBirth}`;
